@@ -1,0 +1,54 @@
+#main {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+}
+
+#timeset {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+body {
+  margin: 0;
+}
+
+#add {
+  font-size: 20px;
+  border-radius: 100px;
+  margin: 0 10px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+#text {
+  border-radius: 100px;
+  border: none;
+}
+
+#input {
+  border: none;
+  box-sizing: border-box;
+  border-radius: 100px;
+  width: 300px;
+  height: 35px;
+  box-shadow: 1px 1px 1px 1px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+#time {
+  box-sizing: border-box;
+  border-radius: 100px;
+  padding: 10px;
+  width: 140px;
+}
+
+#date {
+  box-sizing: border-box;
+  border-radius: 100px;
+  padding: 10px;
+  width: 120px;
+}

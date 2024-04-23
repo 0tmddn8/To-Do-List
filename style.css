@@ -1,18 +1,13 @@
-#main {
+.main {
   width: 100vw;
   display: flex;
   justify-content: center;
   margin: 40px;
 }
 
-#timeset {
-  display: flex;
-  justify-content: center;
-  justify-content: space-around;
-}
-
 body {
   margin: 0;
+  padding: 0;
 }
 
 #add {
@@ -42,72 +37,36 @@ body {
   padding: 10px;
 }
 
-#time {
-  box-sizing: border-box;
-  border-radius: 100px;
-  padding: 10px;
-  width: 120px;
+#add:hover {
+  background-color: rgb(216, 216, 216);
 }
 
-#date {
-  box-sizing: border-box;
-  border-radius: 100px;
-  padding: 10px;
-  width: 120px;
-}
-
-input[type="date"],
-input[type="time"] {
-  border: none;
-  position: relative;
-  width: 100%;
-  padding: 10px;
-  background-color: #ffffff;
-  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
+#listtext {
   text-align: center;
-  font-size: 100%;
-  margin-bottom: 20px;
+  font-size: 20px;
 }
 
-input[type="date"],
-input[type="time"] {
+.delbutton {
+  border-radius: 100px;
   border: none;
-  position: relative;
-  width: 100%;
-  padding: 10px;
-  background-color: #ffffff;
+  background-color: transparent;
   box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-  text-align: center;
-  font-size: 100%;
-  margin-bottom: 20px;
-}
-
-input[type="date"]::-webkit-calendar-picker-indicator,
-input[type="time"]::-webkit-calendar-picker-indicator {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  color: transparent;
   cursor: pointer;
 }
 
-input[type="date"]::before,
-input[type="time"]::before {
-  content: attr(placeholder);
-  width: 100%;
-  height: 100%;
+.editbutton {
+  border: none;
+  background-color: transparent;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+  border-radius: 100px;
+  cursor: pointer;
+  margin: 10px;
 }
 
-input[type="date"]:valid::before,
-input[type="time"]:valid::before {
-  display: none;
+.delbutton:hover {
+  background-color: rgb(216, 216, 216);
 }
 
-#add:hover {
+.editbutton:hover {
   background-color: rgb(216, 216, 216);
 }

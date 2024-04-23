@@ -5,25 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>to do list</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
   </head>
   <body>
-    <div id="main">
+    <div class="main">
       <div id="text">
         <input type="text" id="input" spellcheck="false" />
       </div>
       <button id="add">ADD</button>
     </div>
-    <div id="timeset">
-      <label for="date">
-        DATE :
-        <input type="date" id="date" />
-      </label>
-      <ul id="list"></ul>
-      <label for="time">
-        TIME :
-        <input type="time" id="time" />
-      </label>
-    </div>
+    <ul id="listtext"></ul>
+    <div class="list"></div>
     <script src="script.js"></script>
   </body>
 </html>

@@ -2,23 +2,31 @@ const text = document.getElementById("input");
 
 const button = document.getElementById("add");
 
-const list = document.getElementById("list");
+const list = document.getElementById("listtext");
+
+const box = document.getElementsByClassName("list");
 
 button.addEventListener("click", function () {
   console.log(text.value);
   const li = document.createElement("li");
   const chk = document.createElement("input");
-  const listbutton = document.createElement("button");
+  const delbutton = document.createElement("button");
+  const editbutton = document.createElement("button");
+
+  delbutton.className = "delbutton";
+  editbutton.className = "editbutton";
 
   li.innerText = text.value;
 
   chk.setAttribute("type", "checkbox");
 
-  listbutton.innerText = "삭제";
+  delbutton.innerText = "삭제";
+  editbutton.innerText = "수정";
 
   list.appendChild(li);
-  list.appendChild(listbutton);
   list.appendChild(chk);
+  list.appendChild(delbutton);
+  list.appendChild(editbutton);
 
   chk.addEventListener("click", function (event) {
     console.log(event);
@@ -29,9 +37,14 @@ button.addEventListener("click", function () {
     }
   });
 
-  listbutton.addEventListener("click", function () {
+  delbutton.addEventListener("click", function () {
     li.remove();
-    listbutton.remove();
+    delbutton.remove();
     chk.remove();
+    editbutton.remove();
+  });
+
+  editbutton.addEventListener("click", function () {
+    li.innerText = text.value;
   });
 });

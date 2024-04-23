@@ -6,6 +6,10 @@ const list = document.getElementById("listtext");
 
 const box = document.getElementsByClassName("list");
 
+const date = document.getElementsByClassName("date");
+
+date.value = new Date().toISOString().substring(0, 10);
+
 button.addEventListener("click", function () {
   console.log(text.value);
   const li = document.createElement("li");
